@@ -1,18 +1,42 @@
+/* Body styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+
 /* Navbar styles */
-.sticky-navbar {
+.navbar {
     position: sticky;
     top: 0;
     z-index: 1030;
     background: #fff;
     border-bottom: 1px solid #eee;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 75px;
 }
 .navbar-center-title {
+    pointer-events: none;
     position: absolute;
     left: 0;
     right: 0;
     transform: translateY(-50%);
     top: 50%;
     text-align: center;
+}
+.navbar-link {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar-link:hover {
+    text-decoration: underline;
 }
 @media (max-width: 1000px) {
     .navbar-center-title {
@@ -25,6 +49,10 @@
 
 /* Banner styles */
 .banner-bg {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: calc(-25vw + 25%);
     background: #f2cef4;
     max-height: 300px;
 }
@@ -37,6 +65,12 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
     padding: 0.3em 1em;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+.shop-btn:hover {
+    background: #8bb578;
+    border: 2px solid #666;
+    transform: scale(1.1)
 }
 
 /* Main content styles */
@@ -53,10 +87,48 @@
     background: #b7d7a8;
     border: 2px solid #666;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2rem;
-    min-width: 180px;
+    font-size: 1.5rem;
+    min-width: 150px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+.club-link:hover {
+    background: #8bb578;
+    border: 2px solid #666;
+    transform: scale(1.1)
 }
 .insta-embed {
     background: #fff;
     border-radius: 8px;
+}
+
+/* About Us Section */
+.about-section {
+    background: #fdf1c6;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 4rem 2rem 4rem 2rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    height: 600px;
+    display: flex;
+    align-items: stretch;
+}
+
+.about-title {
+    font-family: 'Anton', Impact, sans-serif;
+    color: #444;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-desc {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.about-image {
+    height: 500px;
+    margin: 0;
 }
