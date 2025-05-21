@@ -1,7 +1,11 @@
 {% extends "layout.html" %}
+
 {% block title %}Columbia Matcha Club{% endblock %}
 
 {% block content %}
+<!-- Flickity CSS for elastic carousel -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 <div class="container-fluid p-0">
 
     <!-- Banner Section -->
@@ -20,19 +24,19 @@
         <div class="col-md-7">
             <h1 class="club-title">Our Club</h1>
             <p class="club-desc">
-                Welcome to Columbia Matcha Club! We are the official club for the Columbia and Barnard community of matcha lovers! Meetings every month on the first Monday of the month at 7:30 pm! Join our slack to get notified about our club and follow our instagram @columbiamatchaclub
+                Welcome to Columbia Matcha Club! We are the official club for the Columbia and Barnard community of matcha lovers! Meetings every month on the first Monday of the month at 7:30 pm! Join our Slack to get notified about our club and follow our Instagram @columbiamatchaclub
             </p>
             <div class="mt-4">
                 <a href="https://slack.com/" target="_blank" class="btn me-3 club-link">Slack</a>
                 <a href="https://instagram.com/columbiamatchaclub" target="_blank" class="btn club-link">Instagram</a>
             </div>
         </div>
-        <div class="col-md-5 text-center">
-            <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-938ce2d7-3595-4a6c-8417-f20f11ee4495" data-elfsight-app-lazy></div>
+        <div class="col-md-5">
+            <!-- Elastic Carousel Container -->
+            <div class="carousel" style="background:#fff;padding:1rem 0;"></div>
         </div>
     </div>
+
     <!-- About Us Section -->
     <div id="about" class="row about-section">
         <div class="col-md-7">
@@ -48,4 +52,505 @@
         </div>
     </div>
 </div>
+
+<!-- Instagram JSON Data -->
+<script id="insta-data" type="application/json">
+{
+  "username": "columbiamatchaclub",
+  "biography": "The official Barnard/Columbia Matcha Club 🍵🌿 \nTaste-testing and exploring new brands & matcha spots!",
+  "profilePictureUrl": "https://cdn2.behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/17841467561195185/profile.webp",
+  "website": "https://join.slack.com/t/columbiamatchaclub/shared_invite/zt-33kqb3eo7-H03Do_EuK6trk11eu54alA",
+  "followersCount": 261,
+  "followsCount": 18,
+  "posts": [
+    {
+      "id": "18064357004295200",
+      "timestamp": "2025-05-07T13:33:16+0000",
+      "permalink": "https://www.instagram.com/p/DJWqp9ZR94B/",
+      "mediaType": "IMAGE",
+      "mediaUrl": "https://scontent-fra3-2.cdninstagram.com/v/t51.75761-15/495528819_17888304567252040_6244247786441890086_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&_nc_ohc=o1BqUGY44bsQ7kNvwEXqYI2&_nc_oc=AdnLhobSAf7W4rnGKQC--7L4Qlm7QktgfLuT1hnVcSp7E31j-A5ocP-60ncaOHKJgrxrmZos3mn745XZ5Hu-lDQH&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfJJgOsZqIuzjhju20fm5mk62asulwxi0LvQ045u1OT0Ng&oe=6833EEEC",
+      "sizes": {
+        "small": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18064357004295200/small.jpg",
+          "height": 400,
+          "width": 320
+        },
+        "medium": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18064357004295200/medium.jpg",
+          "height": 700,
+          "width": 560
+        },
+        "large": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18064357004295200/large.jpg",
+          "height": 1000,
+          "width": 800
+        },
+        "full": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18064357004295200/full.jpg",
+          "height": 1688,
+          "width": 1350
+        }
+      },
+      "caption": "need a break from studying for your finals? come join us tomorrow in the 121 main lounge from 12-1! we are making matcha lattes with different tea infused syrups, brought to you by @oldbarrelteaco! 🍵🌿\n\nhuge thank you to OBTC for sponsoring the event and providing the tea leaves, make sure to go check them out for unique tea blends! 💚",
+      "prunedCaption": "need a break from studying for your finals? come join us tomorrow in the 121 main lounge from 12-1! we are making matcha lattes with different tea infused syrups, brought to you by @oldbarrelteaco! 🍵🌿\n\nhuge thank you to OBTC for sponsoring the event and providing the tea leaves, make sure to go check them out for unique tea blends! 💚",
+      "hashtags": [],
+      "mentions": [
+        "oldbarrelteaco"
+      ],
+      "colorPalette": {
+        "dominant": "13,78,52",
+        "muted": "108,156,117",
+        "mutedLight": "208,212,176",
+        "mutedDark": "37,84,57",
+        "vibrant": "51,116,82",
+        "vibrantLight": "252,235,195",
+        "vibrantDark": "4,71,46"
+      },
+      "missingVideoThumbnail": false,
+      "backgroundColor": "rgb(252.45,238,204)"
+    },
+    {
+      "id": "18016361948705358",
+      "timestamp": "2025-04-16T17:12:33+0000",
+      "permalink": "https://www.instagram.com/p/DIg_DvGRRZo/",
+      "mediaType": "IMAGE",
+      "mediaUrl": "https://scontent-fra3-1.cdninstagram.com/v/t51.75761-15/491445187_17885845659252040_1040339350493401146_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&_nc_ohc=n71ZYtllCDQQ7kNvwGx7ldv&_nc_oc=Adl5H-N7BuxD-A4oz7Q2yoMnHT8yx7Hu-WnqEFiaot9eywEVn1MRlCyABOP2FJVNhuTui-XzENOASr2NUgBnUmnt&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfKNX0FytV6EZBONOBwHWtZXmskqQx6yWaEqtNaqFymF6A&oe=6833E0FD",
+      "sizes": {
+        "small": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18016361948705358/small.jpg",
+          "height": 400,
+          "width": 320
+        },
+        "medium": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18016361948705358/medium.jpg",
+          "height": 700,
+          "width": 560
+        },
+        "large": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18016361948705358/large.jpg",
+          "height": 1000,
+          "width": 800
+        },
+        "full": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18016361948705358/full.jpg",
+          "height": 1800,
+          "width": 1440
+        }
+      },
+      "caption": "come join us at our g-body meeting! so excited to see you all there! 🍵💚\n\n#matcha #nyc #club #matchaclub #columbia #tea #wellness",
+      "prunedCaption": "come join us at our g-body meeting! so excited to see you all there! 🍵💚",
+      "hashtags": [
+        "matcha",
+        "nyc",
+        "club",
+        "matchaclub",
+        "columbia",
+        "tea",
+        "wellness"
+      ],
+      "mentions": [],
+      "colorPalette": {
+        "dominant": "219,192,216",
+        "muted": "139,136,129",
+        "mutedLight": "220,191,214",
+        "mutedDark": "63,77,44",
+        "vibrant": "127,199,55",
+        "vibrantLight": "252,210,247",
+        "vibrantDark": "37,58,16"
+      },
+      "missingVideoThumbnail": false
+    },
+    {
+      "id": "18059273432157368",
+      "timestamp": "2025-04-16T17:11:50+0000",
+      "permalink": "https://www.instagram.com/reel/DIg-7OOxTHg/",
+      "mediaType": "VIDEO",
+      "isReel": true,
+      "mediaUrl": "https://scontent-fra3-1.cdninstagram.com/o1/v/t2/f2/m86/AQMHVEOWaj_pIfDhUjv4bZFUu0AMHi8NL1ecxvFhjzUn2hr1rB7bahy42JdLs0pohMWSOHVdi_vsGxve9AvuxJTlrh8PZLZUzj4UPdk.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_ohc=lytwVWDg05YQ7kNvwE3TNdT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTMwNDM1ODc4MDYzMzQ1MSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjEyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=75162eed111eebf&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9GRDRFMkIxMUU3MEE5N0EyNEU1MDFBMkMyODAxOEM4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dMOHJQeDJ1R2gxZHRoNEdBTWk1T3J6Mkx6eHFicV9FQUFBRhUCAsgBACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJtaFvJzWk9EEFQIoAkMzLBdAKFT987ZFohgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_zt=28&oh=00_AfJP4Qhk6TLa05-aw0oNzAbv169Jqr2E8WesBR97bSIcIw&oe=682FD060",
+      "thumbnailUrl": "https://scontent-fra3-1.cdninstagram.com/v/t51.75761-15/490116530_17885845599252040_6332279440676187349_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&_nc_ohc=jGRugpXo-gsQ7kNvwEmUO6T&_nc_oc=AdkIUNec7LBQebEbN-kx-EFFybWHjEnMHs-TVwEancjGYMQSIE9GURoZ4d4vJagrKIQpu14RrjU8E54Jw7AWPkod&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfKPGi6D3QBtY2yc5yxt4y6eR6g7IuhhMLH69xbOlGBttA&oe=6833EBBD",
+      "sizes": {
+        "small": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18059273432157368/small.jpg",
+          "height": 400,
+          "width": 225
+        },
+        "medium": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18059273432157368/medium.jpg",
+          "height": 700,
+          "width": 394
+        },
+        "large": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18059273432157368/large.jpg",
+          "height": 1000,
+          "width": 563
+        },
+        "full": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18059273432157368/full.jpg",
+          "height": 1280,
+          "width": 720
+        }
+      },
+      "caption": "we are calling your phone!! pick up!! \n\ncome to our gbody meeting next monday to learn more about the club and our goals + missions. you’ll also get the chance to sign up for a matcha tasting event taking place in the near future 🫣😉\n\nwhen: monday, april 21st, 7:30pm\nwhere: 121 main lounge (537 W 121 st). this is a barnard dorm, but swipe access isn’t required to access the main lounge. the lounge is on the first floor to the left when you enter. \n\nwe hope to see you there! 🍵💚",
+      "prunedCaption": "we are calling your phone!! pick up!! \n\ncome to our gbody meeting next monday to learn more about the club and our goals + missions. you’ll also get the chance to sign up for a matcha tasting event taking place in the near future 🫣😉\n\nwhen: monday, april 21st, 7:30pm\nwhere: 121 main lounge (537 W 121 st). this is a barnard dorm, but swipe access isn’t required to access the main lounge. the lounge is on the first floor to the left when you enter. \n\nwe hope to see you there! 🍵💚",
+      "hashtags": [],
+      "mentions": [],
+      "colorPalette": {
+        "dominant": "236,212,237",
+        "muted": "124,140,108",
+        "mutedLight": "206,166,174",
+        "mutedDark": "73,82,52",
+        "vibrant": "133,198,56",
+        "vibrantLight": "243,218,252",
+        "vibrantDark": "45,67,19"
+      },
+      "missingVideoThumbnail": false
+    },
+    {
+      "id": "18059237360511249",
+      "timestamp": "2025-04-10T01:01:10+0000",
+      "permalink": "https://www.instagram.com/p/DIPzHzutaAr/",
+      "mediaType": "CAROUSEL_ALBUM",
+      "mediaUrl": "https://scontent-fra5-1.cdninstagram.com/v/t51.75761-15/490412404_17885090256252040_20074256416679626_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&_nc_ohc=0m55yUVFsSEQ7kNvwH-aMYi&_nc_oc=AdlzNBM2PrBOt5vHa4In75YApEEhE9LTHT1tkten4rS853veKUOJ1r21T9v-CqPJ81ruYqqYpJC2kJVLPNcumZNM&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfJVSes1ZjcQhMM7xTeeepFttreclqG3L8IeXryvLLIykQ&oe=6833BE2E",
+      "sizes": {
+        "small": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18059237360511249/small.jpg",
+          "height": 400,
+          "width": 320
+        },
+        "medium": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18059237360511249/medium.jpg",
+          "height": 700,
+          "width": 560
+        },
+        "large": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18059237360511249/large.jpg",
+          "height": 1000,
+          "width": 800
+        },
+        "full": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18059237360511249/full.jpg",
+          "height": 1350,
+          "width": 1080
+        }
+      },
+      "caption": "introducing the 2024–2025 matcha club e-board 🍵we’re so excited to bring you matcha runs, diy nights, and cozy hangouts this year 🌿follow along for updates, events, and all things green 💚\n\n#columbiamatchaclub #matchaclub #eboard #matchahangs #columbialife #matcha #columbia #nyc",
+      "prunedCaption": "introducing the 2024–2025 matcha club e-board 🍵we’re so excited to bring you matcha runs, diy nights, and cozy hangouts this year 🌿follow along for updates, events, and all things green 💚",
+      "hashtags": [
+        "columbiamatchaclub",
+        "matchaclub",
+        "eboard",
+        "matchahangs",
+        "columbialife",
+        "matcha",
+        "columbia",
+        "nyc"
+      ],
+      "mentions": [],
+      "colorPalette": {
+        "dominant": "65,67,46",
+        "muted": "133,134,84",
+        "mutedLight": "197,179,149",
+        "mutedDark": "56,59,32",
+        "vibrant": "152,113,30",
+        "vibrantLight": "239,208,252",
+        "vibrantDark": "108,165,64"
+      },
+      "children": [
+        {
+          "id": "18030293468344110",
+          "mediaType": "IMAGE",
+          "mediaUrl": "https://scontent-fra5-1.cdninstagram.com/v/t51.75761-15/490412404_17885090256252040_20074256416679626_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&_nc_ohc=0m55yUVFsSEQ7kNvwH-aMYi&_nc_oc=AdlzNBM2PrBOt5vHa4In75YApEEhE9LTHT1tkten4rS853veKUOJ1r21T9v-CqPJ81ruYqqYpJC2kJVLPNcumZNM&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfJVSes1ZjcQhMM7xTeeepFttreclqG3L8IeXryvLLIykQ&oe=6833BE2E",
+          "sizes": {
+            "small": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18030293468344110/small.jpg",
+              "height": 400,
+              "width": 320
+            },
+            "medium": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18030293468344110/medium.jpg",
+              "height": 700,
+              "width": 560
+            },
+            "large": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18030293468344110/large.jpg",
+              "height": 1000,
+              "width": 800
+            },
+            "full": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18030293468344110/full.jpg",
+              "height": 1350,
+              "width": 1080
+            }
+          },
+          "colorPalette": {
+            "dominant": "65,67,46",
+            "muted": "133,134,84",
+            "mutedLight": "197,179,149",
+            "mutedDark": "56,59,32",
+            "vibrant": "152,113,30",
+            "vibrantLight": "239,208,252",
+            "vibrantDark": "108,165,64"
+          },
+          "missingVideoThumbnail": false
+        },
+        {
+          "id": "18086792065619188",
+          "mediaType": "IMAGE",
+          "mediaUrl": "https://scontent-fra3-2.cdninstagram.com/v/t51.75761-15/489964233_17885090265252040_2977303509358507075_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&_nc_ohc=Z-U-77deD7IQ7kNvwHRDDfc&_nc_oc=AdkyKaru2X08uY7ObJsF1PFRtL3LrPZlygoV2C0SHkzca4mpd6YagDt9fT8aRri2c-k_TCs0xBohJn5JBpU7EXc8&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfJrNTLLrdDnEV5sIQ4YemJNiYCVyX6O8NpFYTCaXC6k1g&oe=6833F365",
+          "sizes": {
+            "small": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18086792065619188/small.jpg",
+              "height": 400,
+              "width": 320
+            },
+            "medium": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18086792065619188/medium.jpg",
+              "height": 700,
+              "width": 560
+            },
+            "large": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18086792065619188/large.jpg",
+              "height": 1000,
+              "width": 800
+            },
+            "full": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18086792065619188/full.jpg",
+              "height": 1350,
+              "width": 1080
+            }
+          },
+          "colorPalette": {
+            "dominant": "63,72,54",
+            "muted": "147,129,88",
+            "mutedLight": "212,178,212",
+            "mutedDark": "62,67,48",
+            "vibrant": "229,142,38",
+            "vibrantLight": "244,200,101",
+            "vibrantDark": "22,178,175"
+          },
+          "missingVideoThumbnail": false
+        },
+        {
+          "id": "18355009780178318",
+          "mediaType": "IMAGE",
+          "mediaUrl": "https://scontent-fra3-1.cdninstagram.com/v/t51.75761-15/489758482_17885090274252040_7682001726470649422_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&_nc_ohc=blU4AN7AdvwQ7kNvwGvP2Fk&_nc_oc=Adl6gkKLT5zxzeyiHTzI11gMdsb2Xcch4hveuFGJmAxHoUb7DAyoXUKGSvd6LKdTQlAnI_TmuefmPOWLe97H-LZm&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfJegJkdRE3f3APwE5R7orNtrLk5Yun6Toq1GIQ2WPCkqQ&oe=6833D8B8",
+          "sizes": {
+            "small": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18355009780178318/small.jpg",
+              "height": 400,
+              "width": 320
+            },
+            "medium": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18355009780178318/medium.jpg",
+              "height": 700,
+              "width": 560
+            },
+            "large": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18355009780178318/large.jpg",
+              "height": 1000,
+              "width": 800
+            },
+            "full": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18355009780178318/full.jpg",
+              "height": 1350,
+              "width": 1080
+            }
+          },
+          "colorPalette": {
+            "dominant": "74,79,49",
+            "muted": "104,135,161",
+            "mutedLight": "183,194,203",
+            "mutedDark": "79,97,52",
+            "vibrant": "108,172,76",
+            "vibrantLight": "239,208,252",
+            "vibrantDark": "50,72,15"
+          },
+          "missingVideoThumbnail": false
+        },
+        {
+          "id": "17965690010899561",
+          "mediaType": "IMAGE",
+          "mediaUrl": "https://scontent-fra5-1.cdninstagram.com/v/t51.75761-15/489742896_17885090283252040_2723947293204080719_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&_nc_ohc=HM-eTHFZZWUQ7kNvwGuRIsC&_nc_oc=Adm7H_mNDRhiPOCKc4HI29uQJK33KIL-Y-3dLAUYounDtsCV3FS0t8op8mbdC3fRnjrZXsM-j1SD1Ll7k5_SuJSm&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfLj9beRkus96rBFJf9oXszNNDsNE-e18x_ETdoSDl8S5w&oe=6833C24A",
+          "sizes": {
+            "small": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/17965690010899561/small.jpg",
+              "height": 400,
+              "width": 320
+            },
+            "medium": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/17965690010899561/medium.jpg",
+              "height": 700,
+              "width": 560
+            },
+            "large": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/17965690010899561/large.jpg",
+              "height": 1000,
+              "width": 800
+            },
+            "full": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/17965690010899561/full.jpg",
+              "height": 1350,
+              "width": 1080
+            }
+          },
+          "colorPalette": {
+            "dominant": "75,77,56",
+            "muted": "148,170,90",
+            "mutedLight": "213,179,212",
+            "mutedDark": "64,69,40",
+            "vibrant": "104,176,70",
+            "vibrantLight": "239,208,252",
+            "vibrantDark": "147,120,30"
+          },
+          "missingVideoThumbnail": false
+        },
+        {
+          "id": "18035749670559145",
+          "mediaType": "IMAGE",
+          "mediaUrl": "https://scontent-fra5-2.cdninstagram.com/v/t51.75761-15/489967630_17885090292252040_7230978235321940039_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&_nc_ohc=uxs1Kt9Ol6cQ7kNvwE6JsrR&_nc_oc=AdkjF99a4IIT9ghX9OlIXkPclw-vSnOBOsDPm9LEBvv1vpMVmywN9jN0fVuo5oHN5zgLYguvAkvCojJqdkQBaTxe&_nc_zt=23&_nc_ht=scontent-fra5-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfLGaAZxB6rLB4U17WfjjEsj03cffe45T9myTrT1zpySkA&oe=6833E3DB",
+          "sizes": {
+            "small": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18035749670559145/small.jpg",
+              "height": 400,
+              "width": 320
+            },
+            "medium": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18035749670559145/medium.jpg",
+              "height": 700,
+              "width": 560
+            },
+            "large": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18035749670559145/large.jpg",
+              "height": 1000,
+              "width": 800
+            },
+            "full": {
+              "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/18035749670559145/full.jpg",
+              "height": 1350,
+              "width": 1080
+            }
+          },
+          "colorPalette": {
+            "dominant": "83,105,88",
+            "muted": "96,144,180",
+            "mutedLight": "213,179,212",
+            "mutedDark": "51,101,48",
+            "vibrant": "108,172,64",
+            "vibrantLight": "238,208,252",
+            "vibrantDark": "36,100,44"
+          },
+          "missingVideoThumbnail": false
+        }
+      ],
+      "missingVideoThumbnail": false
+    },
+    {
+      "id": "17871530508241152",
+      "timestamp": "2025-04-09T18:03:32+0000",
+      "permalink": "https://www.instagram.com/p/DIPDU7Tx4zV/",
+      "mediaType": "IMAGE",
+      "mediaUrl": "https://scontent-fra3-1.cdninstagram.com/v/t51.75761-15/488908577_17885065233252040_529654740907007511_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&_nc_ohc=5Hjr8lL_zKYQ7kNvwFZ_N8n&_nc_oc=Adnv1bY0slwqC5GI3CZpcRaZot3mry2Me1G7UZOc4Ind3DGqUCmh9kb5kggdJp7sRR6d9R_AWSU2UK3j0p4LBmCR&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iykht_apKkfBGqeQ5ZqM_w&oh=00_AfKKB_kniyzC9onlteXVAVQLOZ3Obbk2PnqwruNg8H_mnQ&oe=6833E447",
+      "sizes": {
+        "small": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/17871530508241152/small.jpg",
+          "height": 400,
+          "width": 320
+        },
+        "medium": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/17871530508241152/medium.jpg",
+          "height": 700,
+          "width": 560
+        },
+        "large": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/17871530508241152/large.jpg",
+          "height": 1000,
+          "width": 800
+        },
+        "full": {
+          "mediaUrl": "https://behold.pictures/MPAUNfOVRdPtBCKPC6ciTDOKpzY2/uwHvbPvGAza4Eu8JGPHw/17871530508241152/full.jpg",
+          "height": 1800,
+          "width": 1440
+        }
+      },
+      "caption": "Calling all matcha lovers 🍵💚\nEver wanted to go on group matcha runs, learn about wellness, or make your own dreamy syrups?\nCome join us at Columbia Matcha Club ✨\nFollow @columbiamatchaclub to stay in the loop —\nEvents coming soon… 👀\n\n#matchaclub #matcha #columbiauniversity #matchalover #nyc #wellness #studentlife #columbia",
+      "prunedCaption": "Calling all matcha lovers 🍵💚\nEver wanted to go on group matcha runs, learn about wellness, or make your own dreamy syrups?\nCome join us at Columbia Matcha Club ✨\nFollow @columbiamatchaclub to stay in the loop —\nEvents coming soon… 👀",
+      "hashtags": [
+        "matchaclub",
+        "matcha",
+        "columbiauniversity",
+        "matchalover",
+        "nyc",
+        "wellness",
+        "studentlife",
+        "columbia"
+      ],
+      "mentions": [
+        "columbiamatchaclub"
+      ],
+      "colorPalette": {
+        "dominant": "49,77,28",
+        "muted": "129,148,98",
+        "mutedLight": "204,172,204",
+        "mutedDark": "56,83,44",
+        "vibrant": "76,108,52",
+        "vibrantLight": "241,209,252",
+        "vibrantDark": "29,65,4"
+      },
+      "missingVideoThumbnail": false
+    }
+  ]
+}
+</script>
+
+<!-- Flickity JS and Initialization -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const dataEl = document.getElementById('insta-data');
+    if (!dataEl) return;
+    const instaData = JSON.parse(dataEl.textContent);
+    const carouselEl = document.querySelector('.carousel');
+
+    // Build carousel cells
+    instaData.posts.forEach(post => {
+        let imgUrl = post.mediaUrl;
+        if (post.sizes?.medium) imgUrl = post.sizes.medium.mediaUrl;
+        if (post.mediaType === 'VIDEO' && post.thumbnailUrl) imgUrl = post.thumbnailUrl;
+        if (post.mediaType === 'CAROUSEL_ALBUM' && post.children?.length) {
+            imgUrl = post.children[0].mediaUrl;
+        }
+        const caption = post.prunedCaption || post.caption || '';
+
+        const cell = document.createElement('div');
+        cell.className = 'carousel-cell';
+        cell.style.width = '300px';
+        cell.style.marginRight = '16px';
+        cell.style.borderRadius = '12px';
+        cell.style.overflow = 'hidden';
+        cell.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+        cell.innerHTML = `
+            <img src="${imgUrl}" alt="Instagram post" style="display:block;width:100%;height:200px;object-fit:cover;">
+            <div style="padding:0.5rem;font-family:'Courier New',monospace;font-size:0.9rem;line-height:1.2;height:4.5rem;overflow:hidden;color:#333;">
+                ${caption.length > 100 ? caption.slice(0,100) + '…' : caption}
+            </div>
+        `;
+        const link = document.createElement('a');
+        link.href = post.permalink;
+        link.target = '_blank';
+        link.appendChild(cell);
+        carouselEl.appendChild(link);
+    });
+
+    // Initialize Flickity with Prev/Next buttons
+    new Flickity(carouselEl, {
+        cellAlign: 'left',
+        contain: true,
+        draggable: true,
+        freeScroll: true,
+        wrapAround: false,
+        pageDots: false,
+        prevNextButtons: true  // enable Prev/Next
+    });
+});
+</script>
 {% endblock %}
