@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %}Columbia Matcha Club{% endblock %}
+
+{% block content %}
+<div class="container-fluid p-0">
+
+    <!-- Banner Section -->
+    <div class="row align-items-center justify-content-between banner-bg">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center py-3">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Columbia Matcha Club" class="banner-logo">
+        </div>
+        <div class="col-md-4 text-end py-3">
+            <a href="{{ url_for('homepage') }}" class="btn shop-btn">Shop Matcha</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="row mt-4">
+        <div class="col-md-7">
+            <h1 class="club-title">Our Club</h1>
+            <p class="club-desc">
+                Welcome to Columbia Matcha Club! We are the official club for the Columbia and Barnard community of matcha lovers! Meetings every month on the first Monday of the month at 7:30 pm! Join our slack to get notified about our club and follow our instagram @columbiamatchaclub
+            </p>
+            <div class="mt-4">
+                <a href="https://slack.com/" target="_blank" class="btn me-3 club-link">Slack</a>
+                <a href="https://instagram.com/columbiamatchaclub" target="_blank" class="btn club-link">Instagram</a>
+            </div>
+        </div>
+        <div class="col-md-5 text-center">
+            <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-938ce2d7-3595-4a6c-8417-f20f11ee4495" data-elfsight-app-lazy></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

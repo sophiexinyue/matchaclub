@@ -1,0 +1,62 @@
+/* Navbar styles */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.navbar-center-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .navbar-center-title {
+        position: static !important;
+        transform: none !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* Banner styles */
+.banner-bg {
+    background: #f2cef4;
+    max-height: 300px;
+}
+.banner-logo {
+    max-height: 275px;
+}
+.shop-btn {
+    background: #b7d7a8;
+    border: 2px solid #666;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    padding: 0.3em 1em;
+}
+
+/* Main content styles */
+.club-title {
+    font-family: 'Anton', Impact, sans-serif;
+    font-size: 3rem;
+    color: #444;
+}
+.club-desc {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+}
+.club-link {
+    background: #b7d7a8;
+    border: 2px solid #666;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    min-width: 180px;
+}
+.insta-embed {
+    background: #fff;
+    border-radius: 8px;
+}
