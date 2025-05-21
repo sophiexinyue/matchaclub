@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request, jsonify
-import re
-import json
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'matchalovers!'
 
 @app.route('/')
 def homepage():
