@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}Columbia Matcha Club - Recipes{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='recipes.css') }}">
+<div>
+    <div class="recipes-header">Recipes</div>
+    <hr class="recipes-divider">
+    <div class="recipes-container">
+        {% for recipe in recipes %}
+        <div class="recipe-card">
+            <img src="{{ url_for('static', filename=recipe.image) }}" alt="{{ recipe.alt }}">
+            <div class="recipe-title">{{ recipe.title|safe|replace(' ', ' ')|replace('\n', '<br>') }}</div>
+            <div class="recipe-meta">
+                {{ recipe.date }}<br>
+                Prep Time: {{ recipe.prep_time }}<br>
+                Serving size: {{ recipe.serving_size }}
+            </div>
+            <div class="read-more">
+                <a href="{{ recipe.link }}">Read more &gt;</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
