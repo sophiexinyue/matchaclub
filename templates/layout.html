@@ -18,10 +18,19 @@
                     <a href="/" class="fw-normal me-3 navbar-link">Home</a>
                     <a href="{{ url_for('homepage') }}#about" class="navbar-link">About Us</a>
                     <a href="/shop" class="fw-normal navbar-link">Shop</a>
+                    <div class="dropdown">
+                        <a class="navbar-link dropdown-toggle" href="#" id="readingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reading
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="readingDropdown">
+                            <li><a class="dropdown-item" href="/recipes">Recipes</a></li>
+                            <li><a class="dropdown-item" href="#">Reviews</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- Center brand -->
                 <div class="text-center flex-grow-1">
-                    <span class="navbar-center-title" style="font-family: 'Courier New', Courier, monospace; font-size: 2rem;">Columbia Matcha Club</span>
+                    <span class="navbar-center-title" style="font-family: 'Anton', Impact, sans-serif; font-size: 2rem;">Columbia Matcha Club</span>
                 </div>
                 <!-- Right search -->
                 <div class="d-flex align-items-center justify-content-end">
@@ -35,6 +44,33 @@
         <!-- Page-specific content goes here -->
         {% endblock %}
     </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <span>Follow</span>
+                <a href="https://instagram.com/" target="_blank" aria-label="Instagram" class="footer-icon">
+                    <img src="{{ url_for('static', filename='icons/instagram.svg') }}" alt="Instagram" />
+                </a>
+                <a href="https://columbiamatchaclub.slack.com/signup#/domain-signup" target="_blank" aria-label="Slack" class="footer-icon">
+                    <img src="{{ url_for('static', filename='icons/slack.svg') }}" alt="Slack" />
+                </a>
+            </div>
+            <div class="footer-newsletter">
+                <form action="/subscribe" method="post" class="newsletter-form">
+                    <label for="newsletter-email" class="newsletter-label">
+                        Sign up for our newsletter to keep in touch with us!
+                    </label>
+                    <div class="newsletter-input-group">
+                        <input type="email" id="newsletter-email" name="email" placeholder="Email address" required>
+                        <button type="submit">SIGN UP</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Columbia Matcha Club.</span>
+        </div>
+    </footer>
     <!-- jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
