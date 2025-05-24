@@ -198,7 +198,7 @@ html {
 .newsletter-input-group button {
     padding: 8px 18px;
     border: none;
-    background: #cbbfae;
+    background: #fdf1c6;
     color: #23242a;
     font-weight: bold;
     border-radius: 0 3px 3px 0;
@@ -207,7 +207,7 @@ html {
     transition: background 0.2s;
 }
 .newsletter-input-group button:hover {
-    background: #b3a68d;
+    background: #cbbf94;
 }
 .footer-bottom {
     text-align: center;
